@@ -1,3 +1,3 @@
-# TelegramforwardMessageBot 
+# TelegramForwardMessageBot 
 
 После оплаты, сообщения пользователя будут пересылаться в канал/группу.
