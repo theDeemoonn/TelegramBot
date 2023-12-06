@@ -94,6 +94,13 @@ bot.on('successful_payment', async (ctx) => {
         await ctx.forwardMessage(process.env.FORWADR_CHAT_ID, ctx.chat.id, ctx.forwardText)  // ID канала куда будет пересылка сообщения
         await ctx.reply('Объявление опубликовано')
     })
+
+  //reset payment data in session
+    ctx.session = {
+        payment_invoice: null,
+        payment_success: null,
+    }
+
 })
 
 bot.launch()
